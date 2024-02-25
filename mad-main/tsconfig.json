@@ -1,11 +1,28 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "C:/Users/salta/Documents/Portfolio-2.0/mad-main",
     "paths": {
-      "astro/*": ["./src/astro/*"],
-      "components/*": ["./src/components/*"],
-      "icons/*": ["./src/icons/*"]
-    }
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@icons/*": [
+        "./src/icons/*"
+      ],
+      "@sections/*": [
+        "./src/sections/*"
+      ],
+      "@images/*": [
+        "./public/images/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
+      "@atoms/*": [
+        "./src/components/atoms/*"
+      ],
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }

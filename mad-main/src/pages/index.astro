@@ -1,9 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro"
+import Hero from "@sections/Hero.astro"
+import Projects from "@sections/Projects.astro"
+import Skills from "@sections/Skills.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Template</h1>
+	<main class="flex flex-col px-60 gap-8">
+		<nav>soy nav</nav>
+		<Hero />
+		<Projects />
+		<Skills />
 	</main>
 </Layout>
