@@ -1,15 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Navbar from "@components/Navbar.astro"
 import Hero from "@sections/Hero.astro"
 import Projects from "@sections/Projects.astro"
 import Skills from "@sections/Skills.astro"
+import Experiencie from "@sections/Experiencie.astro"
+import Contact from "@sections/Contact.astro"
+import Footer from "@sections/Footer.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="flex flex-col px-60 gap-8">
-		<nav>soy nav</nav>
+	<main class="flex flex-col gap-8 w-[960px]">
+		<Navbar />
 		<Hero />
 		<Projects />
 		<Skills />
+		<Experiencie />
+		<Contact />
+		<Footer />
 	</main>
 </Layout>

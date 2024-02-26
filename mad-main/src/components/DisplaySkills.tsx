@@ -14,7 +14,7 @@ const DisplaySkills = () => {
 		setItems(SKILLS.slice(indexOfFirstItem, indexOfLastItem))
 	}, [currentPage])
 	return (
-		<div class="flex flex-col relative gap-4 items-center">
+		<div class="flex flex-col relative gap-4 ">
             
 			<div class="grid grid-cols-5 grid-rows-2 gap-x-6 gap-y-2">
 				{items.map((skill) => (
