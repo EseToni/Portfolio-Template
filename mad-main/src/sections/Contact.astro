@@ -1,0 +1,45 @@
+---
+
+---
+
+<section class="flex flex-col">
+	<h3 class="text-2xl font-bold">Contact</h3>
+	<form class="flex flex-col gap-6 py-4 font-medium w-[480px] text-slate-500">
+		<div class="flex flex-row gap-4">
+			<div class="flex flex-col gap-2">
+				<label for="name" class="text-zinc-950">Name</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Your name"
+					class="px-2 py-2 rounded-xl bg-transparent border-2 border-slate-300 w-[233px] focus:outline-none"
+					required
+				/>
+			</div>
+			<div class="flex flex-col gap-2">
+				<label for="email" class="text-zinc-950">Email</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Your email"
+					class="px-2 py-2 rounded-xl bg-transparent border-2 border-slate-300 w-[233px] focus:outline-none"
+					required
+				/>
+			</div>
+		</div>
+		<div class="flex flex-col">
+			<!-- <label for="message">Message</label> -->
+			<textarea
+				id="message"
+				name="message"
+				placeholder="Write your message here"
+				class="resize-none px-2 py-2 rounded-xl bg-transparent border-2 border-slate-300 h-32 focus:outline-none"
+				required></textarea>
+		</div>
+		<button type="submit" class="px-4 py-2 text-white bg-[#1A80E5] rounded-xl font-bold">
+			Send Message
+		</button>
+	</form>
+</section>
