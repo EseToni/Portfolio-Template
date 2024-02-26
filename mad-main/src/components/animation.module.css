@@ -1,0 +1,54 @@
+@keyframes translate_x_right {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+    } 
+}
+
+@keyframes translate_x_left {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+    } 
+}
+
+.translate_x_right {
+    animation: translate_x_right 0.3s ease-in-out;
+}
+
+.translate_x_left {
+    animation: translate_x_left 0.3s ease-in-out;
+}
+.group_card:hover{
+    .bg_left{
+        transform: translate(-100%);
+    }
+    .bg_right{
+        transform: translate(100%);
+
+    }
+    .text_card{
+        opacity: 0;
+    }
+}
+
+.text_card{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg_left {
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+
+}
+.bg_right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
