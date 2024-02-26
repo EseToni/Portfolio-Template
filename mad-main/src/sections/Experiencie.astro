@@ -1,0 +1,21 @@
+---
+import EXPERIENCIE from "@data/EXPERIENCIE"
+import ExperiencieCard from "@components/ExperiencieCard.astro"
+---
+
+<section class="flex flex-col  gap-6">
+	<h3 class="text-2xl font-bold">Experiencie</h3>
+	<div class="flex flex-col gap-6">
+		{
+			EXPERIENCIE.map((experiencie, index) => (
+				<ExperiencieCard
+					location={experiencie.location}
+					title={experiencie.title}
+					date={experiencie.date}
+					description={experiencie.description}
+                    icon={experiencie.icon}
+				/>
+			))
+		}
+	</div>
+</section>
