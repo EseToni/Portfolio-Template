@@ -10,13 +10,13 @@ interface Props {
 const { title, description, icon, date, location } = Astro.props as Props
 ---
 
-<article class="flex flex-row gap-4 items-start ">
-	<picture class="w-20 h-16 bg-slate-300 rounded-lg flex items-center justify-center ">
+<article class="flex flex-row gap-4 items-start cursor-default ">
+	<picture class="w-20 h-16 bg-[#E8EDF2] rounded-lg flex items-center justify-center ">
 		<img src={icon} alt={title} />
 	</picture>
-	<div class="flex flex-col gap-1 text-slate-500">
-		<h2 class="font-semibold text-lg  text-zinc-950">{title}</h2>
-		<p>{description}</p>
+	<div class="flex flex-col gap-1 text-[#4F7396] text-wrap">
+		<h2 class="font-semibold text-lg  text-[#0D141C] ">{title}</h2>
+		<p class="font-normal">{description}</p>
 		<div class="flex flex-row gap-4">
 			<time>{date}</time>
 			<span>{location}</span>

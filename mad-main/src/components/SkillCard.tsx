@@ -6,13 +6,11 @@ interface Props {
 
 const SkillCard = ({ name, icon, description }: Props) => {
 	return (
-		<article class="flex flex-col gap-2 max-w-80 border-solid border-slate-300 border-2  rounded-lg p-4 w-44 h-36 overflow-hidden">
+		<article class="flex flex-col gap-2 border-solid  border-2 border-[#E5E8EB] rounded-xl p-4 w-44 h-36 overflow-hidden transition-all hover:border-transparent hover:scale-105 hover:shadow-sm cursor-default">
 			<img src={icon} alt={name} class="w-8 h-8" />
-			<div>
-				<h3 class="font-bold text-zinc-950">{name}</h3>
-				<p
-					class="text-slate-500 text-xs text-wrap font-normal"
-				>
+			<div class="flex flex-col gap-0">
+				<h3 class="font-bold text-[#0D141C]">{name}</h3>
+				<p class="text-[#4F7396] text-xs text-wrap font-normal">
 					{description}
 				</p>
 			</div>

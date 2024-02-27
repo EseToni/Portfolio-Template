@@ -1,15 +1,15 @@
 ---
-
+import style from "../components/animation.module.css"
 ---
 
-<section class="flex flex-row gap-4 ">
+<section class="flex flex-row gap-4 mt-28 	">
 	<picture>
-		<img src="../../images/hero.png" />
+		<img src="/images/hero_img.png" />
 	</picture>
 	<div class="flex flex-col justify-center gap-6">
 		<div class="flex flex-col gap-2">
-			<h2 class="text-5xl text-zinc-800 font-black">Hi, I'm Antonio</h2>
-			<p class="text-zinc-800 text-left text-balance ">
+			<h2 class="text-[#0D141C] text-5xl font-black">Hi, I'm Antonio</h2>
+			<p class="text-[#0D141C] text-left text-balance">
 				I'm a front-end developer basend in NYC.Currentrly building beautiful,
 				usable interfaces at a creative agency
 			</p>
@@ -17,13 +17,15 @@
 
 		<div class="flex flex-row gap-4 font-bold">
 			<button
-				class="bg-[#1A80E5] rounded-xl text-zinc-100 py-2 px-4 flex text-center"
+				
+				class=`bg-[#1A80E5] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[#1A80E5] hover:shadow-md hover:scale-105`
 				>View Resume</button
 			>
 			<button
-				class="bg-slate-300 rounded-xl text-zinc-800 py-2 px-4 flex text-center"
+				class="bg-[#E8EDF2] rounded-xl text-[#0D141C] py-2 px-4 flex text-center hover:shadow-sm hover:scale-105 transition-all"
 				>Contact</button
 			>
 		</div>
 	</div>
 </section>
+

@@ -2,17 +2,40 @@
 
 ---
 
-<nav class="flex flex-row justify-between py-4 border-b-2 border-slate-200 items-center">
-	<div>
-		<h3 class="font-bold">Portfolio</h3>
-	</div>
+<nav
+	id="navbar"
+	class="flex  justify-center py-4   border-b-2 border-[#E5E8EB]  fixed top-0 w-full left-0 z-20 navbar"
+>
+	<div class="flex fle-row justify-between w-[1080px]">
+		<div class="flex flex-row gap-4 items-center">
+			<svg width="12" height="13" viewBox="0 0 12 13" fill="none">
+				<path d="M0 0.5H12L10 6.5L12 12.5H0L2 6.5L0 0.5Z" fill="#0D141C"></path>
+			</svg>
 
-	<div class="flex flex-row gap-8 font-medium text-zinc-950">
-		<button> Hero</button>
-		<button> Projects</button>
-		<button> Skills</button>
-		<button class="bg-[#1A80E5] text-zinc-100 rounded-xl px-4 py-2 font-bold">
-			Contact
-		</button>
+			<h3 class="font-bold text-[#0D141C] text-xl">Portfolio</h3>
+		</div>
+
+		<div class="flex flex-row gap-8 font-medium text-[#0D141C] text-base">
+			<button
+				class="rounded-xl px-3 py-1 text-center transition-all hover:shadow-xs hover:scale-105"
+			>
+				Hero</button
+			>
+			<button
+				class="rounded-xl px-3 py-1 text-center transition-all hover:shadow-xs hover:scale-105"
+			>
+				Projects</button
+			>
+			<button
+				class="rounded-xl px-3 py-1 text-center transition-all hover:shadow-xs hover:scale-105"
+			>
+				Skills</button
+			>
+			<button
+				class="bg-[#1A80E5] text-[#F7FAFC] rounded-xl px-4 py-2 font-bold text-center transition-all hover:bg-[#F7FAFC] hover:text-[#1A80E5] hover:shadow-sm hover:scale-105"
+			>
+				Contact
+			</button>
+		</div>
 	</div>
 </nav>

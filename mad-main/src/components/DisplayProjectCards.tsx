@@ -11,13 +11,13 @@ const DisplayProjectCards = () => {
 	const itemsPerPage = 3
 	const indexOfLastItem = currentPage * itemsPerPage
 	const indexOfFirstItem = indexOfLastItem - itemsPerPage
-
+	
 	useEffect(() => {
 		setItems(PROJECTS.slice(indexOfFirstItem, indexOfLastItem))
 	}, [currentPage])
 
 	return (
-		<div class="flex flex-col relative gap-4 ">
+		<div class="flex flex-col relative gap-8 ">
 			<div
 				class={`flex flex-row gap-8 transition-all ${
 					changingPage

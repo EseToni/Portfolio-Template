@@ -18,6 +18,7 @@
     } 
 }
 
+
 .translate_x_right {
     animation: translate_x_right 0.3s ease-in-out;
 }
@@ -51,4 +52,3 @@
 .bg_right {
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
 }
-

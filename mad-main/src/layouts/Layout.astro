@@ -17,13 +17,38 @@ const { title } = Astro.props
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
-	<body class="flex justify-center overflow-x-hidden">
+	<body class="flex justify-center overflow-x-hidden bg-[#F7FAFC] ">
 		<slot />
 	</body>
 </html>
 <style is:global>
+	:root{
+		--color-primary: #2E3A59;
+	}
 	html {
 		font-family: 'Inter Variable', system-ui, sans-serif;
 		background: #E8EDF2;
+	}
+	@keyframes animate_nav {
+		0&{
+
+		}
+		50%{
+			border-color: transparent;
+			background-color: #F7FAFC;
+
+		}
+		100% {
+			backdrop-filter: blur(10px);
+			border-color: transparent;
+			background: #F7FAFC;
+			box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5)
+			0 0 20px -2px rgba(0, 0, 0, 0.5);
+		}
+	}
+	#navbar{
+		animation : animate_nav linear both;
+		animation-timeline: scroll();
+		animation-range: 0 1366px;
 	}
 </style>
