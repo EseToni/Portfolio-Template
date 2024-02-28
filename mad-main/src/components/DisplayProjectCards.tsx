@@ -1,53 +1,75 @@
 import { useState, useEffect } from "preact/hooks"
 import ProjectCard from "@components/ProjectCard"
-import PROJECTS from "@data/PROJECTS"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
+import projects from "@data/projects.json"
 
 const DisplayProjectCards = () => {
+	const [prevPage, setPrevPage] = useState(0)
 	const [currentPage, setCurrentPage] = useState(1)
 	const [changingPage, setChangingPage] = useState(false)
-	const [items, setItems] = useState(PROJECTS)
-	const itemsPerPage = 3
+	const [items, setItems] = useState(projects)
+	const [itemsPerPage, setItemPerPage] = useState(1)
 	const indexOfLastItem = currentPage * itemsPerPage
 	const indexOfFirstItem = indexOfLastItem - itemsPerPage
-	
+
+	const calculateItemsPerPage = () => {
+		const width = window.innerWidth
+
+		if (width > 1024) {
+			return 3
+		} else if (width > 768) {
+			return 2
+		} else {
+			return 1
+		}
+	}
+
 	useEffect(() => {
-		setItems(PROJECTS.slice(indexOfFirstItem, indexOfLastItem))
-	}, [currentPage])
+		setItemPerPage(calculateItemsPerPage())
+	}, [])
+
+	useEffect(() => {
+		setItems(projects.slice(indexOfFirstItem, indexOfLastItem))
+	}, [currentPage, itemsPerPage])
 
 	return (
-		<div class="flex flex-col relative gap-8 ">
+		<div class="flex flex-col relative gap-4 lg:gap-8 items-center ">
 			<div
 				class={`flex flex-row gap-8 transition-all ${
 					changingPage
-						? currentPage == Math.ceil(PROJECTS.length / itemsPerPage)
+						? currentPage > prevPage
 							? style.translate_x_right
 							: style.translate_x_left
 						: ""
 				}`}
 			>
-				{items.map((project, index) => (
-					<ProjectCard
-						key={index}
-						title={project.title}
-						description={project.description}
-						image={project.image}
-						name={project.name}
-						color_1={project.color_1}
-						color_2={project.color_2}
-					/>
-				))}
+				{items.slice(indexOfFirstItem, indexOfLastItem).map((project, index) => {
+					return (
+						<ProjectCard
+							key={index}
+							title={project.title}
+							description={project.description}
+							image={project.image}
+							name={project.name}
+							color_1={project.color_1}
+							color_2={project.color_2}
+							link={project.link}
+						/>
+					)
+				})}
 			</div>
 			<Pages
-				pages={Math.ceil(PROJECTS.length / itemsPerPage)}
+				pages={Math.ceil(projects.length / itemsPerPage)}
 				currentPage={currentPage}
 				setCurrentPage={(page: number) => {
-					setChangingPage(true)
+					if (currentPage === page) return
+					setPrevPage(currentPage)
 					setCurrentPage(page)
+					setChangingPage(true)
 					setTimeout(() => {
 						setChangingPage(false)
-					}, 300)
+					}, 500)
 				}}
 			/>
 		</div>

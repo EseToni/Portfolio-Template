@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Navbar from "@components/Navbar.astro"
+import ChangeTheme from "@components/ChangeTheme"
 import Hero from "@sections/Hero.astro"
 import Projects from "@sections/Projects.astro"
 import Skills from "@sections/Skills.astro"
@@ -9,14 +10,30 @@ import Contact from "@sections/Contact.astro"
 import Footer from "@sections/Footer.astro"
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="flex flex-col gap-16 w-[960px] relative">
+<Layout title="Portfolio">
+	<ChangeTheme client:idle />
+	<main
+		class="flex flex-col gap-16 overflow-x-hidden  w-full   bg-transparent relative"
+		id="start"
+	>
 		<Navbar />
-		<Hero />
-		<Projects />
-		<Skills />
-		<Experiencie />
-		<Contact />
-		<Footer />
+		<div class="w-full flex flex-col items-center">
+			<Hero />
+		</div>
+		<div class="w-full flex flex-col items-center">
+			<Projects />
+		</div>
+		<div class="w-full flex flex-col items-center">
+			<Skills />
+		</div>
+		<div class="w-full flex flex-col items-center">
+			<Experiencie />
+		</div>
+		<div class="w-full flex flex-col items-center">
+			<Contact />
+		</div>
+		<div class="w-full flex flex-col items-center">
+			<Footer />
+		</div>
 	</main>
 </Layout>

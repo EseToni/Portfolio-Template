@@ -1,31 +1,51 @@
 ---
-import style from "../components/animation.module.css"
+import MoveButton from "@components/MoveButton"
+import info from "@data/info.json"
 ---
 
-<section class="flex flex-row gap-4 mt-28 	">
+<section
+	class="flex flex-col items-start w-[360px] md:w-[640px] md:justify-center md:gap-4 lg:w-[960px] md:flex-row gap-6"
+	id="hero"
+>
 	<picture>
-		<img src="/images/hero_img.png" />
+		<img
+			src={info.hero_img || "/images/hero_img.webp"}
+			alt="hero"
+			class="w-[320px] h-[200px] lg:w-[385px] md:w-[420px] md:h-[180px] lg:h-[220px] rounded-lg shadow-lg"
+		/>
 	</picture>
 	<div class="flex flex-col justify-center gap-6">
 		<div class="flex flex-col gap-2">
-			<h2 class="text-[#0D141C] text-5xl font-black">Hi, I'm Antonio</h2>
+			<h2 class="text-[#0D141C] text-5xl font-black">{info.name}</h2>
 			<p class="text-[#0D141C] text-left text-balance">
-				I'm a front-end developer basend in NYC.Currentrly building beautiful,
-				usable interfaces at a creative agency
+				{info.description}
 			</p>
 		</div>
 
 		<div class="flex flex-row gap-4 font-bold">
-			<button
-				
-				class=`bg-[#1A80E5] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[#1A80E5] hover:shadow-md hover:scale-105`
-				>View Resume</button
-			>
-			<button
-				class="bg-[#E8EDF2] rounded-xl text-[#0D141C] py-2 px-4 flex text-center hover:shadow-sm hover:scale-105 transition-all"
-				>Contact</button
-			>
+			<a href={`${info.resume}`} download={"resume_cv_" + info.alias}>
+				<button
+					class="group items-start gap-1 bg-[var(--primary-color)] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[var(--primary-color)] hover:shadow-md hover:scale-105"
+				>
+					Resume
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="18"
+						height="18"
+						viewBox="0 0 256 256"
+						><path
+							class=" fill-[#F7FAFC] group-hover:fill-[var(--primary-color)] transition-all"
+							d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0m-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"
+						></path></svg
+					>
+				</button>
+			</a>
+			<MoveButton client:idle targetId="contact">
+				<button
+					class="shadow-md hover:text-[var(--primary-color)] rounded-xl text-[#0D141C] py-2 px-4 flex text-center hover:shadow-sm hover:scale-105 transition-all"
+					>Contact</button
+				>
+			</MoveButton>
 		</div>
 	</div>
 </section>
-

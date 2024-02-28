@@ -1,46 +1,99 @@
 ---
-
+import MoveButton from "@components/MoveButton"
+import SocialMedia from "@components/SocialMedia.astro"
+import info from "@data/info.json"
 ---
 
-<section class="flex flex-col gap-10">
-	<h3 class="text-2xl font-bold text-[#0D141C] ">Contact</h3>
-	<form class="flex flex-col gap-6 font-medium w-[480px] text-[#4F7396]">
-		<div class="flex flex-row gap-4">
-			<div class="flex flex-col gap-2">
-				<label for="name" class="text-[#0D141C]">Name</label>
-				<input
-					type="text"
-					id="name"
-					name="name"
-					placeholder="Your name"
-					autocomplete="additional-name"
-					class="px-2 py-3 rounded-xl  font-base bg-transparent border-2 transition-all focus:border-transparent focus:shadow-md focus:scale-105 border-[#D1DBE8] w-[233px] focus:outline-none"
-					required
-				/>
-			</div>
-			<div class="flex flex-col gap-2">
-				<label for="email" class="text-[#0D141C]">Email</label>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					placeholder="Your email"
-					class="px-2 py-3 rounded-xl font-base bg-transparent  focus:scale-105  transition-all focus:border-transparent focus:shadow-md border-2 border-[#D1DBE8] w-[233px] focus:outline-none"
-					required
-				/>
+<section class="flex flex-col gap-10" id="contact">
+	<section class="flex flex-col gap-10">
+		<h3 class="text-2xl font-bold text-[#0D141C]">Contact</h3>
+		<div
+			class="flex flex-col gap-20 lg:grid lg:grid-cols-2 lg:gap-x-10 md:h-[295px]"
+		>
+			<form
+				id="contactForm"
+				action={`${info.formspreeUrl || "https://formspree.io/f/xnqoqzqk"}`}
+				method="POST"
+				class="flex flex-col gap-6 font-medium w-[340px] md:w-[480px] text-[#4F7396]"
+			>
+				<div class="flex flex-col md:flex-row md:gap-4">
+					<div class="flex flex-col gap-2">
+						<label for="name" class="text-[#0D141C]">Name</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Your name"
+							autocomplete="additional-name"
+							class="px-2 py-3 rounded-xl font-base bg-transparent border-2 transition-all focus:border-transparent focus:shadow-md focus:scale-105 border-[#D1DBE8] md:w-[233px] focus:outline-none"
+							required
+						/>
+					</div>
+					<div class="flex flex-col gap-2">
+						<label for="email" class="text-[#0D141C]">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Your email"
+							class="px-2 py-3 rounded-xl font-base bg-transparent focus:scale-105 transition-all focus:border-transparent focus:shadow-md border-2 border-[#D1DBE8] md:w-[233px] focus:outline-none"
+							required
+						/>
+					</div>
+				</div>
+				<div class="flex flex-col">
+					<!-- <label for="message">Message</label> -->
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Write your message here"
+						class="resize-none px-2 py-3 font-base transition-all focus:border-transparent focus:shadow-md rounded-xl bg-transparent focus:scale-105 border-2 border-[#D1DBE8] h-32 focus:outline-none"
+						required></textarea>
+				</div>
+				<button
+					type="submit"
+					class="px-3 py-3 text-[#F7FAFC] bg-[var(--primary-color)] rounded-xl font-bold transition-all hover:scale-105 hover:shadow-md hover:text-[var(--primary-color)] hover:bg-[#F7FAFC] hover:text-lg"
+				>
+					Send Message
+				</button>
+			</form>
+			<div class="flex1 flex-col flex justify-end items-end px-6 gap-2">
+				<SocialMedia />
+				<MoveButton client:idle targetId="start">
+					<button
+						class="bg-transparent shadow-md fill-[#0D141C] text-[#0D141C] hover:fill-[var(--primary-color)] hover:text-[var(--primary-color)] items-center font-bold rounded-xl gap-0 py-1 px-4 text-base flex text-center hover:shadow-sm hover:bg-[#F7FAFC] hover:scale-105 transition-all"
+					>
+						<svg width="36" height="36" viewBox="0 0 24 24">
+							<path
+								d="m11 8.8l-2.9 2.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L13 8.8V17q0 .425-.288.713T12 18q-.425 0-.712-.288T11 17z"
+							></path>
+						</svg>
+						<span class="mr-2">Back to top</span>
+					</button>
+				</MoveButton>
 			</div>
 		</div>
-		<div class="flex flex-col">
-			<!-- <label for="message">Message</label> -->
-			<textarea
-				id="message"
-				name="message"
-				placeholder="Write your message here"
-				class="resize-none px-2 py-3 font-base transition-all focus:border-transparent focus:shadow-md rounded-xl bg-transparent focus:scale-105 border-2 border-[#D1DBE8] h-32 focus:outline-none"
-				required></textarea>
-		</div>
-		<button type="submit" class="px-3 py-3 text-[#F7FAFC] bg-[#1A80E5] rounded-xl font-bold transition-all hover:scale-105 hover:shadow-md hover:text-[#1A80E5] hover:bg-[#F7FAFC] hover:text-lg">
-			Send Message
-		</button>
-	</form>
+	</section>
 </section>
+
+<script>
+	document
+		.getElementById("contactForm")
+		?.addEventListener("submit", function (event: Event) {
+			event.preventDefault()
+
+			const form = this as HTMLFormElement
+
+			setTimeout(function () {
+				form.submit()
+
+				const name = document.getElementById("name") as HTMLInputElement
+				const email = document.getElementById("email") as HTMLInputElement
+				const message = document.getElementById("message") as HTMLInputElement
+
+				name.value = ""
+				email.value = ""
+				message.value = ""
+			}, 500)
+		})
+</script>
