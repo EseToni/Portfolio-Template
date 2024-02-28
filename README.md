@@ -1,8 +1,9 @@
 
 
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
     <a href="https://portfolio-tonidev.netlify.app/" target="_blank">
+        <img src="logo.png" height="90px" width="auto" /> 
+    </a>
         
 <h2>
     <em>Portfolio</em> minimalista para web
