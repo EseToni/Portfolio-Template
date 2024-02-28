@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks"
-import skills from "@data/skills.json"
+import * as skills from "@data/skills.json"
 import SkillCard from "./SkillCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"

@@ -2,7 +2,7 @@ import { useState, useEffect } from "preact/hooks"
 import ProjectCard from "@components/ProjectCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
-import projects  from "@data/projects.json"
+import * as projects  from "@data/projects.json"
 import type { Project } from "src/types/project"
 
 const DisplayProjectCards = () => {
