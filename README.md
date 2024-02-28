@@ -2,8 +2,6 @@
 
 <div align="center">
 
-        <img src="logo.png" height="90px" width="auto" /> 
-    </a>
         
 <h2>
     <em>Portfolio</em> minimalista para web
@@ -51,8 +49,8 @@
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/EseToni/Portfolio-Template)
 ![GitHub issues](https://img.shields.io/github/issues/EseToni/Portfolio-Template)
-![GitHub forks](https://img.shields.io/github/EseToni/Portfolio-Template)
-![GitHub PRs](https://img.shields.io/github/EseToni/Portfolio-Template)
+![GitHub forks](https://img.shields.io/github/forks/EseToni/Portfolio-Template)
+![GitHub PRs](https://img.shields.io/github/issues-pr/EseToni/Portfolio-Template)
 
 </div>
     <a href="https://portfolio-tonidev.netlify.app/" target="_blank">
