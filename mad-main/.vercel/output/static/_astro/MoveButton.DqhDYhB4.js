@@ -1,0 +1,1 @@
+import{u as l}from"./jsxRuntime.module.DffJabvY.js";import"./preact.module.5IcniKGG.js";const a=({children:t,targetId:e})=>l("div",{onClick:()=>{const o=document.getElementById(e);if(o){var n=o.offsetTop;window.scrollTo({top:n-128,behavior:"smooth"})}},children:t});export{a as default};

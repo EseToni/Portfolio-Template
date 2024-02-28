@@ -1,14 +1,15 @@
 import { useState, useEffect } from "preact/hooks"
-import skills from "@data/skills.json"
+import * as skills from "@data/skills.json"
 import SkillCard from "./SkillCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
+import type { Skill } from "src/types/skil"
 
 const DisplaySkills = () => {
 	const [prevPage, setPrevPage] = useState(0)
 	const [currentPage, setCurrentPage] = useState(1)
 	const [changingPage, setChangingPage] = useState(false)
-	const [items, setItems] = useState(skills)
+	const [items, setItems] = useState(skills as Skill[])
 	const [itemsPerPage, setItemsPerPage] = useState(4)
 	const indexOfLastItem = currentPage * itemsPerPage
 	const indexOfFirstItem = indexOfLastItem - itemsPerPage
@@ -42,7 +43,7 @@ const DisplaySkills = () => {
 						: ""
 				}`}
 			>
-				{items.map((skill) => (
+				{items.map((skill : Skill) => (
 					<SkillCard
 						name={skill.name}
 						icon={skill.icon}
