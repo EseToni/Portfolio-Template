@@ -9,14 +9,14 @@
 </a>
 <p>
   <em>
-    Sencillo de usar
+    Sencillo de usar de <strong>libre uso</strong>
   </em></p>
 </p>
 
 
 <p>
   <em>
-    Para toda la comunidad se aceptan #PR
+    Para toda la comunidad se aceptan : <strong>pull requets</strong>
   </em>
 
 </p>
