@@ -1,19 +1,20 @@
 ---
 import experiencie from "@data/experiencie.json"
 import ExperiencieCard from "@components/ExperiencieCard.astro"
+import type { Experiencie } from "../types/experiencie"
 ---
 
-<section class="flex flex-col  gap-10">
+<section class="flex flex-col gap-10">
 	<h3 class="text-2xl font-bold text-[#0D141C]">Experiencie</h3>
 	<div class="flex flex-col gap-8">
 		{
-			experiencie.map((experiencie, index) => (
+			experiencie.map((experiencie: Experiencie) => (
 				<ExperiencieCard
 					location={experiencie.location}
 					title={experiencie.title}
 					date={experiencie.date}
 					description={experiencie.description}
-                    icon={experiencie.icon}
+					icon={experiencie.icon}
 				/>
 			))
 		}

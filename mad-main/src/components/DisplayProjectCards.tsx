@@ -2,13 +2,14 @@ import { useState, useEffect } from "preact/hooks"
 import ProjectCard from "@components/ProjectCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
-import projects from "@data/projects.json"
+import projects  from "@data/projects.json"
+import type { Project } from "src/types/project"
 
 const DisplayProjectCards = () => {
 	const [prevPage, setPrevPage] = useState(0)
 	const [currentPage, setCurrentPage] = useState(1)
 	const [changingPage, setChangingPage] = useState(false)
-	const [items, setItems] = useState(projects)
+	const [items, setItems] = useState(projects as Project[])
 	const [itemsPerPage, setItemPerPage] = useState(1)
 	const indexOfLastItem = currentPage * itemsPerPage
 	const indexOfFirstItem = indexOfLastItem - itemsPerPage
@@ -44,7 +45,7 @@ const DisplayProjectCards = () => {
 						: ""
 				}`}
 			>
-				{items.slice(indexOfFirstItem, indexOfLastItem).map((project, index) => {
+				{items.slice(indexOfFirstItem, indexOfLastItem).map((project : Project, index : number) => {
 					return (
 						<ProjectCard
 							key={index}
