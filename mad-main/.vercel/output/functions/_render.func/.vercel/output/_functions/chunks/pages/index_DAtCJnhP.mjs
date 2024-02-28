@@ -1,4 +1,4 @@
-import { s as styles, a as style } from '../index.287a6ed1_yq8vgBkJ.mjs';
+import { s as styles, a as style } from '../index.287a6ed1_CEqAWDDf.mjs';
 import { e as createAstro, f as createComponent, r as renderTemplate, i as renderHead, j as renderSlot, m as maybeRenderHead, h as addAttribute, k as renderComponent } from '../astro_BvCfnv2U.mjs';
 import 'kleur/colors';
 import 'html-escaper';
@@ -34,23 +34,15 @@ const MoveButton = ({
   });
 };
 
-const alias = "Tonidev";
-const hero_img = "/images/hero_img.webp";
-const name = "Hi, I'm Antonio";
-const description = "I'm a full-stack developer with a passion for web technologies and a love for design.";
-const resume = "/resources/CV.pdf";
-const formspreeUrl = "https://formspree.io/f/xeqykrok";
-const gitUrl = "https://github.com/EseToni/Portfolio-Template";
-const linkedinUrl = "https://www.linkedin.com/in/antonio-fullstackdev/";
 const info = {
-	alias: alias,
-	hero_img: hero_img,
-	name: name,
-	description: description,
-	resume: resume,
-	formspreeUrl: formspreeUrl,
-	gitUrl: gitUrl,
-	linkedinUrl: linkedinUrl
+  alias: "Tonidev",
+  hero_img: "/images/hero_img.webp",
+  name: "Hi, I'm Antonio",
+  description: "I'm a full-stack developer with a passion for web technologies and a love for design.",
+  resume: "/resources/CV.pdf",
+  formspreeUrl: "https://formspree.io/f/xeqykrok",
+  gitUrl: "https://github.com/EseToni/Portfolio-Template",
+  linkedinUrl: "https://www.linkedin.com/in/antonio-fullstackdev/"
 };
 
 const $$Astro$9 = createAstro();
@@ -65,62 +57,55 @@ Contact
 </button> ` })} </div> </div> </nav>`;
 }, "C:/Users/salta/Documents/Portfolio-2.0/mad-main/src/components/Navbar.astro", void 0);
 
-const projects = [
-	{
-		name: "WoF",
-		color_1: "#6C91C2",
-		color_2: "#373F47",
-		title: "Sharing Platform",
-		description: "Innovative pet care platform with secure tech (React, Express), diverse payments (PayPal, credit cards), and personalized data storage.",
-		image: "/images/wof_img.webp",
-		link: "https://wof-project.vercel.app/"
-	},
-	{
-		name: "Byder",
-		color_1: "#dbfba4",
-		color_2: "#564d80",
-		title: "E-commerce App",
-		description: "Find any fashion item in nearby stores with Byder. Redefining the offline shopping experience. Built with React Native.",
-		image: "/images/byder_img.webp",
-		link: "https://apps.apple.com/es/app/byder-app/id6472192997?l=en-GB"
-	},
-	{
-		name: "NextMenu",
-		color_1: "#A9E5BB",
-		color_2: "#F7B32B",
-		title: "App for Restaurants",
-		description: "Simplifying menu creation and management for restaurants. Link menus with QR codes and generate personalized websites. Built with Next.js, Node.js, and MongoDB.",
-		image: "/images/nextmenu_img.webp",
-		link: "https://github.com/EseToni/NextMenu"
-	},
-	{
-		name: "F1-Stats",
-		color_1: "#f52a41",
-		color_2: "#2D1E2F",
-		title: "Wiki Site",
-		description: "Explore F1 at home! Discover drivers, design your driver. Dive into the exciting F1 universe. Built with React, SQL, Node.",
-		image: "/images/f1stats_img.webp",
-		link: "https://pilotosformula1.vercel.app/"
-	},
-	{
-		name: "Port-Temp",
-		color_1: "#bd93f9",
-		color_2: "#53a684",
-		title: "Portfolio template",
-		description: "Showcase your work elegantly and highlight your skills with a responsive design. Elevate your online presence effortlessly!",
-		image: "/images/portfolio_template_img.webp",
-		link: "https://portfolio-esetoni.vercel.app/"
-	},
-	{
-		name: "R&M Wiki",
-		color_1: "#e0e0e0",
-		color_2: "#2a2b2e",
-		title: "Wiki Site",
-		description: "Explore the Rick and Morty universe! Discover characters, locations, and episodes. Built with React, SQL, Node.",
-		image: "/images/r&m_wiki_img.webp",
-		link: "https://rickandmortywiki.vercel.app/"
-	}
-];
+const projects = [{
+  name: "WoF",
+  color_1: "#6C91C2",
+  color_2: "#373F47",
+  title: "Sharing Platform",
+  description: "Innovative pet care platform with secure tech (React, Express), diverse payments (PayPal, credit cards), and personalized data storage.",
+  image: "/images/wof_img.webp",
+  link: "https://wof-project.vercel.app/"
+}, {
+  name: "Byder",
+  color_1: "#dbfba4",
+  color_2: "#564d80",
+  title: "E-commerce App",
+  description: "Find any fashion item in nearby stores with Byder. Redefining the offline shopping experience. Built with React Native.",
+  image: "/images/byder_img.webp",
+  link: "https://apps.apple.com/es/app/byder-app/id6472192997?l=en-GB"
+}, {
+  name: "NextMenu",
+  color_1: "#A9E5BB",
+  color_2: "#F7B32B",
+  title: "App for Restaurants",
+  description: "Simplifying menu creation and management for restaurants. Link menus with QR codes and generate personalized websites. Built with Next.js, Node.js, and MongoDB.",
+  image: "/images/nextmenu_img.webp",
+  link: "https://github.com/EseToni/NextMenu"
+}, {
+  name: "F1-Stats",
+  color_1: "#f52a41",
+  color_2: "#2D1E2F",
+  title: "Wiki Site",
+  description: "Explore F1 at home! Discover drivers, design your driver. Dive into the exciting F1 universe. Built with React, SQL, Node.",
+  image: "/images/f1stats_img.webp",
+  link: "https://pilotosformula1.vercel.app/"
+}, {
+  name: "Port-Temp",
+  color_1: "#bd93f9",
+  color_2: "#53a684",
+  title: "Portfolio template",
+  description: "Showcase your work elegantly and highlight your skills with a responsive design. Elevate your online presence effortlessly!",
+  image: "/images/portfolio_template_img.webp",
+  link: "https://portfolio-esetoni.vercel.app/"
+}, {
+  name: "R&M Wiki",
+  color_1: "#e0e0e0",
+  color_2: "#2a2b2e",
+  title: "Wiki Site",
+  description: "Explore the Rick and Morty universe! Discover characters, locations, and episodes. Built with React, SQL, Node.",
+  image: "/images/r&m_wiki_img.webp",
+  link: "https://rickandmortywiki.vercel.app/"
+}];
 
 const ChangeTheme = () => {
   const colors = projects.flatMap(({
@@ -160,7 +145,7 @@ const $$Hero = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Hero;
   return renderTemplate`${maybeRenderHead()}<section class="flex flex-col items-start w-[360px] md:w-[640px] md:justify-center md:gap-4 lg:w-[960px] md:flex-row gap-6" id="hero"> <picture> <img${addAttribute(info.hero_img , "src")} alt="hero" class="w-[320px] h-[200px] lg:w-[385px] md:w-[420px] md:h-[180px] lg:h-[220px] rounded-lg shadow-lg"> </picture> <div class="flex flex-col justify-center gap-6"> <div class="flex flex-col gap-2"> <h2 class="text-[#0D141C] text-5xl font-black">${info.name}</h2> <p class="text-[#0D141C] text-left text-balance"> ${info.description} </p> </div> <div class="flex flex-row gap-4 font-bold"> <a${addAttribute(`${info.resume}`, "href")}${addAttribute("resume_cv_" + info.alias, "download")}> <button class="group items-start gap-1 bg-[var(--primary-color)] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[var(--primary-color)] hover:shadow-md hover:scale-105">
 Resume
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path class=" fill-[#F7FAFC] group-hover:fill-[var(--primary-color)] transition-all" d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0m-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg> </button> </a> ${renderComponent($$result, "MoveButton", MoveButton, { "client:idle": true, "targetId": "contact", "client:component-hydration": "idle", "client:component-path": "@components/MoveButton", "client:component-export": "default" }, { "default": ($$result2) => renderTemplate` <button class="shadow-md hover:text-[var(--primary-color)] rounded-xl text-[#0D141C] py-2 px-4 flex text-center hover:shadow-sm hover:scale-105 transition-all">Contact</button> ` })} </div> </div> </section>`;
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path class="fill-[#F7FAFC] group-hover:fill-[var(--primary-color)] transition-all" d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0m-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg> </button> </a> ${renderComponent($$result, "MoveButton", MoveButton, { "client:idle": true, "targetId": "contact", "client:component-hydration": "idle", "client:component-path": "@components/MoveButton", "client:component-export": "default" }, { "default": ($$result2) => renderTemplate` <button class="shadow-md hover:text-[var(--primary-color)] rounded-xl text-[#0D141C] py-2 px-4 flex text-center hover:shadow-sm hover:scale-105 transition-all">Contact</button> ` })} </div> </div> </section>`;
 }, "C:/Users/salta/Documents/Portfolio-2.0/mad-main/src/sections/Hero.astro", void 0);
 
 const ProjectCard2 = ({
@@ -288,8 +273,8 @@ const DisplayProjectCards = () => {
   const [prevPage, setPrevPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [changingPage, setChangingPage] = useState(false);
-  const [items, setItems] = useState(projects);
   const [itemsPerPage, setItemPerPage] = useState(1);
+  const [items, setItems] = useState(projects.slice(0, itemsPerPage));
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const calculateItemsPerPage = () => {
@@ -312,7 +297,7 @@ const DisplayProjectCards = () => {
     class: "flex flex-col relative gap-4 lg:gap-8 items-center ",
     children: [jsx("div", {
       class: `flex flex-row gap-8 transition-all ${changingPage ? currentPage > prevPage ? style.translate_x_right : style.translate_x_left : ""}`,
-      children: items.slice(indexOfFirstItem, indexOfLastItem).map((project, index) => {
+      children: items.map((project, index) => {
         return jsx(ProjectCard2, {
           title: project.title,
           description: project.description,
@@ -347,138 +332,111 @@ const $$Projects = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section class="flex flex-col mt-10 gap-10" id="projects"> <h3 class="text-2xl font-bold text-[#0D141C] ">Featured Projects</h3> ${renderComponent($$result, "DisplayProjectCards", DisplayProjectCards, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "@components/DisplayProjectCards", "client:component-export": "default" })} </section>`;
 }, "C:/Users/salta/Documents/Portfolio-2.0/mad-main/src/sections/Projects.astro", void 0);
 
-const skills = [
-	{
-		name: "JavaScript",
-		icon: "/icons/javascript.svg",
-		description: "Dynamic language for web development."
-	},
-	{
-		name: "TypeScript",
-		icon: "/icons/typescript.svg",
-		description: "Typed superset enhancing JS."
-	},
-	{
-		name: "HTML/CSS",
-		icon: "/icons/html.svg",
-		description: "Essential web markup and styling."
-	},
-	{
-		name: "Python",
-		icon: "/icons/python.svg",
-		description: "Readability and versatility in scripting."
-	},
-	{
-		name: "Php",
-		icon: "/icons/php.svg",
-		description: "Server-side scripting for web."
-	},
-	{
-		name: "C",
-		icon: "/icons/c.svg",
-		description: "Foundational programming language."
-	},
-	{
-		name: "React",
-		icon: "/icons/react.svg",
-		description: "Facebook's UI library for web apps."
-	},
-	{
-		name: "Astro",
-		icon: "/icons/astro.svg",
-		description: "Modern static site generator."
-	},
-	{
-		name: "NextJs",
-		icon: "/icons/nextjs.svg",
-		description: "React-based web application framework."
-	},
-	{
-		name: "Laravel",
-		icon: "/icons/laravel.svg",
-		description: "Elegant PHP framework for web apps."
-	},
-	{
-		name: "NodeJs",
-		icon: "/icons/nodejs.svg",
-		description: "JavaScript runtime for server-side development."
-	},
-	{
-		name: "Express",
-		icon: "/icons/express.svg",
-		description: "Minimal and flexible Node.js web framework."
-	},
-	{
-		name: "NestJs",
-		icon: "/icons/nestjs.svg",
-		description: "Fast and minimalist web framework for Node.js."
-	},
-	{
-		name: "WebSockets",
-		icon: "/icons/websockets.svg",
-		description: "Cross-platform real-time communication."
-	},
-	{
-		name: "Moongose",
-		icon: "/icons/orm.svg",
-		description: "Elegant MongoDB object modeling tool."
-	},
-	{
-		name: "Sequelize",
-		icon: "/icons/orm.svg",
-		description: "Promise-based Node.js ORM for databases."
-	},
-	{
-		name: "Jest",
-		icon: "/icons/jest.svg",
-		description: "Delightful JavaScript testing framework."
-	},
-	{
-		name: "Redux",
-		icon: "/icons/redux.svg",
-		description: "Predictable state container for JS apps."
-	},
-	{
-		name: "Tailwind",
-		icon: "/icons/tailwind.svg",
-		description: "Utility-first CSS framework for UI."
-	},
-	{
-		name: "Bootstrap",
-		icon: "/icons/bootstrap.svg",
-		description: "Front-end framework for responsive design."
-	},
-	{
-		name: "Sass",
-		icon: "/icons/sass.svg",
-		description: "Stylesheet language extending CSS."
-	},
-	{
-		name: "SQL",
-		icon: "/icons/sql.svg",
-		description: "Structured Query Language for databases."
-	},
-	{
-		name: "MongoDB",
-		icon: "/icons/mongodb.svg",
-		description: "NoSQL database for high performance."
-	},
-	{
-		name: "Firebase",
-		icon: "/icons/firebase.svg",
-		description: "Google's platform for app development."
-	},
-	{
-		name: "Docker",
-		icon: "/icons/docker.svg",
-		description: "Open-source platform for container deployment."
-	},
-	{
-		name: "Aws",
-		icon: "/icons/aws.svg",
-		description: "Amazon's on-demand cloud computing services."
-	}
-];
+const skills = [{
+  name: "JavaScript",
+  icon: "/icons/javascript.svg",
+  description: "Dynamic language for web development."
+}, {
+  name: "TypeScript",
+  icon: "/icons/typescript.svg",
+  description: "Typed superset enhancing JS."
+}, {
+  name: "HTML/CSS",
+  icon: "/icons/html.svg",
+  description: "Essential web markup and styling."
+}, {
+  name: "Python",
+  icon: "/icons/python.svg",
+  description: "Readability and versatility in scripting."
+}, {
+  name: "Php",
+  icon: "/icons/php.svg",
+  description: "Server-side scripting for web."
+}, {
+  name: "C",
+  icon: "/icons/c.svg",
+  description: "Foundational programming language."
+}, {
+  name: "React",
+  icon: "/icons/react.svg",
+  description: "Facebook's UI library for web apps."
+}, {
+  name: "Astro",
+  icon: "/icons/astro.svg",
+  description: "Modern static site generator."
+}, {
+  name: "NextJs",
+  icon: "/icons/nextjs.svg",
+  description: "React-based web application framework."
+}, {
+  name: "Laravel",
+  icon: "/icons/laravel.svg",
+  description: "Elegant PHP framework for web apps."
+}, {
+  name: "NodeJs",
+  icon: "/icons/nodejs.svg",
+  description: "JavaScript runtime for server-side development."
+}, {
+  name: "Express",
+  icon: "/icons/express.svg",
+  description: "Minimal and flexible Node.js web framework."
+}, {
+  name: "NestJs",
+  icon: "/icons/nestjs.svg",
+  description: "Fast and minimalist web framework for Node.js."
+}, {
+  name: "WebSockets",
+  icon: "/icons/websockets.svg",
+  description: "Cross-platform real-time communication."
+}, {
+  name: "Moongose",
+  icon: "/icons/orm.svg",
+  description: "Elegant MongoDB object modeling tool."
+}, {
+  name: "Sequelize",
+  icon: "/icons/orm.svg",
+  description: "Promise-based Node.js ORM for databases."
+}, {
+  name: "Jest",
+  icon: "/icons/jest.svg",
+  description: "Delightful JavaScript testing framework."
+}, {
+  name: "Redux",
+  icon: "/icons/redux.svg",
+  description: "Predictable state container for JS apps."
+}, {
+  name: "Tailwind",
+  icon: "/icons/tailwind.svg",
+  description: "Utility-first CSS framework for UI."
+}, {
+  name: "Bootstrap",
+  icon: "/icons/bootstrap.svg",
+  description: "Front-end framework for responsive design."
+}, {
+  name: "Sass",
+  icon: "/icons/sass.svg",
+  description: "Stylesheet language extending CSS."
+}, {
+  name: "SQL",
+  icon: "/icons/sql.svg",
+  description: "Structured Query Language for databases."
+}, {
+  name: "MongoDB",
+  icon: "/icons/mongodb.svg",
+  description: "NoSQL database for high performance."
+}, {
+  name: "Firebase",
+  icon: "/icons/firebase.svg",
+  description: "Google's platform for app development."
+}, {
+  name: "Docker",
+  icon: "/icons/docker.svg",
+  description: "Open-source platform for container deployment."
+}, {
+  name: "Aws",
+  icon: "/icons/aws.svg",
+  description: "Amazon's on-demand cloud computing services."
+}];
 
 const SkillCard = ({
   name,
@@ -559,22 +517,19 @@ const $$Skills = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="flex flex-col gap-6 items-center" id="skills"> <div class="flex flex-row justify-start items-start w-full"> <h3 class="text-2xl font-bold text-[#0D141C]">Skills</h3> </div> ${renderComponent($$result, "DisplaySkills", DisplaySkills, { "client:idle": true, "client:component-hydration": "idle", "client:component-path": "@components/DisplaySkills.tsx", "client:component-export": "default" })} </div>`;
 }, "C:/Users/salta/Documents/Portfolio-2.0/mad-main/src/sections/Skills.astro", void 0);
 
-const experiencie = [
-	{
-		title: "FullStack Developer",
-		description: "I focus on creating and improving landing pages, dashboards, and online applications. My tasks include designing frontend interfaces, maintaining and optimizing websites, and addressing critical issues to enhance web page performance.",
-		location: "Remote",
-		date: "2022 - Present",
-		icon: "/icons/fullstack.svg"
-	},
-	{
-		title: "HVAC Tech",
-		description: "Enhanced my problem-solving, teamwork, and project management skills. It instilled a self-directed learning mindset, forming a strong foundation for my transition into programming",
-		location: "Sevilla, Spain",
-		date: "2019 - 2021",
-		icon: "/icons/hvac.svg"
-	}
-];
+const experience = [{
+  title: "FullStack Developer",
+  description: "I focus on creating and improving landing pages, dashboards, and online applications. My tasks include designing frontend interfaces, maintaining and optimizing websites, and addressing critical issues to enhance web page performance.",
+  location: "Remote",
+  date: "2022 - Present",
+  icon: "/icons/fullstack.svg"
+}, {
+  title: "HVAC Tech",
+  description: "Enhanced my problem-solving, teamwork, and project management skills. It instilled a self-directed learning mindset, forming a strong foundation for my transition into programming",
+  location: "Sevilla, Spain",
+  date: "2019 - 2021",
+  icon: "/icons/hvac.svg"
+}];
 
 const $$Astro$5 = createAstro();
 const $$ExperiencieCard = createComponent(async ($$result, $$props, $$slots) => {
@@ -588,7 +543,7 @@ const $$Astro$4 = createAstro();
 const $$Experiencie = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Experiencie;
-  return renderTemplate`${maybeRenderHead()}<section class="flex flex-col gap-10"> <h3 class="text-2xl font-bold text-[#0D141C]">Experiencie</h3> <div class="flex flex-col gap-8"> ${experiencie.map((experiencie2) => renderTemplate`${renderComponent($$result, "ExperiencieCard", $$ExperiencieCard, { "location": experiencie2.location, "title": experiencie2.title, "date": experiencie2.date, "description": experiencie2.description, "icon": experiencie2.icon })}`)} </div> </section>`;
+  return renderTemplate`${maybeRenderHead()}<section class="flex flex-col gap-10"> <h3 class="text-2xl font-bold text-[#0D141C]">Experiencie</h3> <div class="flex flex-col gap-8"> ${experience.map((experiencie2) => renderTemplate`${renderComponent($$result, "ExperiencieCard", $$ExperiencieCard, { "location": experiencie2.location, "title": experiencie2.title, "date": experiencie2.date, "description": experiencie2.description, "icon": experiencie2.icon })}`)} </div> </section>`;
 }, "C:/Users/salta/Documents/Portfolio-2.0/mad-main/src/sections/Experiencie.astro", void 0);
 
 const $$Astro$3 = createAstro();
