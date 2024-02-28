@@ -64,7 +64,7 @@
 - [**Typescript**](https://www.typescriptlang.org/) y [**Tailwind**](https://www.typescriptlang.org/)  - Aceleradores de desarollo.
 
 
-## 🚀-Empezar {#-empezar}
+## 🚀-Empezar
 
 ### 1. Usa este [repo](https://github.com/EseToni/Portfolio-Template/) como _template_ para tu Portfolio.
 
@@ -93,7 +93,7 @@ npm run dev
 1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
 
 
-## 🧞 Comandos {#comandos}
+## 🧞 Comandos 
 
 |     | Comando          | Acción                                        |
 | :-- | :--------------- | :-------------------------------------------- |
@@ -103,9 +103,17 @@ npm run dev
 
 
 
-## 🔑 Licencia {#licencia}
+## 🔑 Licencia
 
 [MIT](LICENSE.txt) - Creado por [**tonidev**](https://github.com/EseToni/)https://github.com/EseToni/).
+
+## 🫂 Contribuidores
+
+<a href="https://github.com/EseToni/Portfolio-Template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=EseToni/Portfolio-Template" />
+</a>
+
+<p></p>
 
 
 
