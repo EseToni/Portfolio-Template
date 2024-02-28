@@ -61,7 +61,7 @@
 - [**Typescript**](https://www.typescriptlang.org/) y [**Tailwind**](https://www.typescriptlang.org/)  - Aceleradores de desarollo.
 
 
-## 🚀 Empezar
+## 🚀-Empezar
 
 ### 1. Usa este [repo](https://github.com/EseToni/Portfolio-Template/) como _template_ de un proyecto de Astro
 
