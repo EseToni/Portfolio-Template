@@ -1,7 +1,7 @@
 
 
 <div align="center">
-
+<img src="logo.png" height="180px" width="auto" /> 
         
 <h2>
     <em>Portfolio</em> minimalista para desarrolladores
