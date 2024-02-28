@@ -77,10 +77,10 @@ git clone https://github.com/EseToni/Portfolio-Template.git
 ```
 
 ### 2. Añade tu contenido:
-Edita los archivos que se encuentran en la ruta [__@data/__](mad-main/src/data/) `info.json` `experiencie.json` `skills.json` `projects.json` para crear tu propio Portafolio.
+Edita la información de los archivos __.json__ que se encuentran en la ruta [__@data/__](mad-main/src/data/) `*.json` para crear tu propio Portafolio.
 
 ### 3. Añadiendo img - icons:
-Añade en [__@public/*__](mad-main/public/) las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de [__@data__](mad-main/src/data/)
+Añade en [__@public/*__](mad-main/public/)`img` \\ `icons` las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de [__@data__](mad-main/src/data/)
 
 ### 3. Lanza el servidor de desarrollo:
 
