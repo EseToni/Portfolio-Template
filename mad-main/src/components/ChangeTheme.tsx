@@ -1,4 +1,4 @@
-import projects from "@data/projects.ts"
+import projects from "@data/projects.json"
 
 import styles from "./paddle.module.css"
 import { useState } from "preact/hooks"

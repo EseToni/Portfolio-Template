@@ -1,8 +1,8 @@
 import { useState, useEffect } from "preact/hooks"
-import ProjectCard from "@components/ProjectCard"
+import ProjectCard from "./ProjectCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
-import  projects  from "@data/projects.ts"
+import projects from "@data/projects.json"
 
 const DisplayProjectCards = () => {
 	const [prevPage, setPrevPage] = useState(0)
@@ -45,7 +45,6 @@ const DisplayProjectCards = () => {
 				}`}
 			>
 				{items.map((project, index: number) => {
-
 					return (
 						<ProjectCard
 							key={index}

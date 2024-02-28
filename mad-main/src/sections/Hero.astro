@@ -1,6 +1,6 @@
 ---
 import MoveButton from "@components/MoveButton"
-import info from "@data/info.ts"
+import info from "@data/info.json"
 ---
 
 <section
@@ -9,7 +9,7 @@ import info from "@data/info.ts"
 >
 	<picture>
 		<img
-			src={info.hero_img || "/images/hero_img.webp"}
+			src={info.hero_img || "images/hero_img.webp"}
 			alt="hero"
 			class="w-[320px] h-[200px] lg:w-[385px] md:w-[420px] md:h-[180px] lg:h-[220px] rounded-lg shadow-lg"
 		/>
@@ -23,7 +23,7 @@ import info from "@data/info.ts"
 		</div>
 
 		<div class="flex flex-row gap-4 font-bold">
-			<a href={`${info.resume}`} download={"resume_cv_" + info.alias}>
+			<a href={`${info.resume || "resources/CV.pdf"}`} download={"resume_cv_" + info.alias + ".pdf"}>
 				<button
 					class="group items-start gap-1 bg-[var(--primary-color)] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[var(--primary-color)] hover:shadow-md hover:scale-105"
 				>

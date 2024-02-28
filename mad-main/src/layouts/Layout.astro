@@ -5,25 +5,28 @@ interface Props {
 }
 
 const { title } = Astro.props
-
-
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio template for community, v1 @tonidev" />
+		<meta
+			name="description"
+			content="Portfolio template for community, v1 @tonidev  #Portfolio-template"
+		/>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/icons/astro.svg" />
+		<link rel="icon" type="image/svg+xml" href="icons/astro.svg" />
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col relative items-center py-0 justify-start  overflow-x-hidden w-full bg-[#F7FAFC]">
+	<body
+		class="flex flex-col relative items-center py-0 justify-start overflow-x-hidden w-full bg-[#F7FAFC]"
+	>
 		<slot />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--primary-color: #6C91C2;
+		--primary-color: #6c91c2;
 	}
 	html {
 		font-family: "Inter Variable", system-ui, sans-serif;
@@ -33,7 +36,6 @@ const { title } = Astro.props
 		display: none;
 	}
 	@keyframes animate_nav {
-
 		50% {
 			border-color: transparent;
 			backdrop-filter: blur(10px);
@@ -55,5 +57,4 @@ const { title } = Astro.props
 		animation-timeline: scroll();
 		animation-range: 0 1480px;
 	}
-
 </style>

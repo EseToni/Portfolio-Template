@@ -1,6 +1,6 @@
 ---
 import MoveButton from "./MoveButton"
-import  info from "@data/info.ts"
+import info from "@data/info.json"
 ---
 
 <nav
@@ -9,8 +9,11 @@ import  info from "@data/info.ts"
 >
 	<div class="flex fle-row justify-between w-[1080px]">
 		<div class="md:flex flex-row gap-4 items-center hidden">
-			<a href={`${info.gitUrl || "https://github.com/EseToni"}`} target="_blank">
-				<svg width="22" height="22" viewBox="0 0 256 256" 
+			<a
+				href={`${info.gitUrl || "https://github.com/EseToni"}`}
+				target="_blank"
+			>
+				<svg width="22" height="22" viewBox="0 0 256 256"
 					><path
 						fill="#0D141C"
 						d="M208 112a32.06 32.06 0 0 0-31 24h-25a40.19 40.19 0 0 1-32-16L93.69 84.92A32 32 0 1 0 72 87v82a32 32 0 1 0 16 0v-65l19.2 25.6A56.26 56.26 0 0 0 152 152h25a32 32 0 1 0 31-40M96 200a16 16 0 1 1-16-16a16 16 0 0 1 16 16m112-40a16 16 0 0 1-16-16a16 16 0 1 1 16 16"
@@ -19,7 +22,9 @@ import  info from "@data/info.ts"
 			</a>
 
 			<a href="https://github.com/EseToni/Portfolio-Template" target="_blank">
-				<h4 class="font-bold text-[#0D141C] text-xl">{info.alias || "Tonidev"}</h4>
+				<h4 class="font-bold text-[#0D141C] text-xl">
+					{info.alias || "Tonidev"}
+				</h4>
 			</a>
 		</div>
 

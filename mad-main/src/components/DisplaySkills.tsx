@@ -1,9 +1,9 @@
 import { useState, useEffect } from "preact/hooks"
-import skills from "@data/skills.ts"
+import skills from "../data/skills.json"
 import SkillCard from "./SkillCard"
 import Pages from "./atoms/Pages"
 import style from "./animation.module.css"
-import type { Skill } from "src/types/skil"
+import type { Skill } from "types/skills"
 
 const DisplaySkills = () => {
 	const [prevPage, setPrevPage] = useState(0)
@@ -43,7 +43,7 @@ const DisplaySkills = () => {
 						: ""
 				}`}
 			>
-				{items.map((skill : Skill) => (
+				{items.map((skill: Skill) => (
 					<SkillCard
 						name={skill.name}
 						icon={skill.icon}

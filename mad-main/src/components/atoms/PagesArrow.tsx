@@ -4,7 +4,7 @@ interface Props {
 	setCurrentPage: (page: number) => void
 }
 
-import  projects from "@data/projects.ts"
+import  projects from "@data/projects.json"
 
 const PagesArrow = ({ pages, currentPage, setCurrentPage }: Props) => {
 	const handlePage = (page_s: number) => {
