@@ -1,7 +1,7 @@
 
 
 <div align="center">
-    <a href="https://portfolio-tonidev.netlify.app/" target="_blank">
+
         <img src="logo.png" height="90px" width="auto" /> 
     </a>
         
@@ -55,8 +55,9 @@
 ![GitHub PRs](https://img.shields.io/github/EseToni/Portfolio-Template)
 
 </div>
-
+    <a href="https://portfolio-tonidev.netlify.app/" target="_blank">
 <img src="portada.png"></img>
+    </a>
 
 ## 🛠️ Stack
 
