@@ -24,15 +24,15 @@
 </div>
 
 <div align="center">
-    <a href="#🚀-empezar">
+    <a href="#empezar">
         Empezar
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
+    <a href="#comandos">
         Comandos
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
+    <a href="#licencia">
         Licencia
     </a>
     <span>&nbsp;✦&nbsp;</span>
@@ -64,9 +64,9 @@
 - [**Typescript**](https://www.typescriptlang.org/) y [**Tailwind**](https://www.typescriptlang.org/)  - Aceleradores de desarollo.
 
 
-## 🚀-Empezar
+## 🚀-Empezar {#empezar}
 
-### 1. Usa este [repo](https://github.com/EseToni/Portfolio-Template/) como _template_ de un proyecto de Astro
+### 1. Usa este [repo](https://github.com/EseToni/Portfolio-Template/) como _template_ para tu Portfolio.
 
 
 - Yo uso [npm](https://www.npmjs.com/) como gestor de dependencias y empaquetador.
@@ -77,23 +77,23 @@ git clone https://github.com/EseToni/Portfolio-Template.git
 ```
 
 ### 2. Añade tu contenido:
-Edita los archivos que se encuentran en la ruta [__@data](mad-main/src/data/) `info.json` `experiencie.json` `skills.json` `projects.json` para crear tu propio Portafolio.
+Edita los archivos que se encuentran en la ruta [__@data/__](mad-main/src/data/) `info.json` `experiencie.json` `skills.json` `projects.json` para crear tu propio Portafolio.
 
 ### 3. Añadiendo img - icons:
-Añade en [__@mad-main/public/*__](mad-main/public/) las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de [__@data](mad-main/src/data/)
+Añade en [__@public/*__](mad-main/public/) las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de [__@data__](mad-main/src/data/)
 
 ### 3. Lanza el servidor de desarrollo:
 
 ```bash
 # Disfruta del resultado
-npm dev
+npm run dev
 ```
 
 
 1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
 
 
-## 🧞 Comandos
+## 🧞 Comandos {#comandos}
 
 |     | Comando          | Acción                                        |
 | :-- | :--------------- | :-------------------------------------------- |
@@ -103,7 +103,7 @@ npm dev
 
 
 
-## 🔑 Licencia
+## 🔑 Licencia {#licencia}
 
 [MIT](LICENSE.txt) - Creado por [**tonidev**](https://github.com/EseToni/)https://github.com/EseToni/).
 
