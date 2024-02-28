@@ -8,8 +8,8 @@ const DisplayProjectCards = () => {
 	const [prevPage, setPrevPage] = useState(0)
 	const [currentPage, setCurrentPage] = useState(1)
 	const [changingPage, setChangingPage] = useState(false)
-	const [items, setItems] = useState(projects)
 	const [itemsPerPage, setItemPerPage] = useState(1)
+	const [items, setItems] = useState(projects.slice(0, itemsPerPage))
 	const indexOfLastItem = currentPage * itemsPerPage
 	const indexOfFirstItem = indexOfLastItem - itemsPerPage
 
@@ -44,7 +44,7 @@ const DisplayProjectCards = () => {
 						: ""
 				}`}
 			>
-				{items.slice(indexOfFirstItem, indexOfLastItem).map((project, index) => {
+				{items.map((project, index: number) => {
 					return (
 						<ProjectCard
 							key={index}
