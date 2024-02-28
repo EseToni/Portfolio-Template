@@ -24,7 +24,7 @@
 </div>
 
 <div align="center">
-    <a href="#empezar">
+    <a href="#-empezar">
         Empezar
     </a>
     <span>&nbsp;✦&nbsp;</span>
@@ -64,7 +64,7 @@
 - [**Typescript**](https://www.typescriptlang.org/) y [**Tailwind**](https://www.typescriptlang.org/)  - Aceleradores de desarollo.
 
 
-## 🚀-Empezar {#empezar}
+## 🚀-Empezar {#-empezar}
 
 ### 1. Usa este [repo](https://github.com/EseToni/Portfolio-Template/) como _template_ para tu Portfolio.
 
