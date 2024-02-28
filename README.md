@@ -4,7 +4,7 @@
 
         
 <h2>
-    <em>Portfolio</em> minimalista para web
+    <em>Portfolio</em> minimalista para desarrolladores
 </h2>
 </a>
 <p>
