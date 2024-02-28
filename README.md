@@ -36,7 +36,7 @@
         Licencia
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
+    <a href="https://portfolio-tonidev.netlify.app/">
         Personal
     </a>
    
@@ -77,10 +77,10 @@ git clone https://github.com/EseToni/Portfolio-Template.git
 ```
 
 ### 2. Añade tu contenido:
-Edita los archivos que se encuentran en la ruta __@mad-main/src/data/*__ `info.json` `experiencie.json` `skills.json` `projects.json` para crear tu propio Portafolio.
+Edita los archivos que se encuentran en la ruta [__@data](mad-main/src/data/) `info.json` `experiencie.json` `skills.json` `projects.json` para crear tu propio Portafolio.
 
 ### 3. Añadiendo img - icons:
-Añade en __@mad-main/public/*__ las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de #@data
+Añade en [__@mad-main/public/*__](mad-main/public/) las imagenes y los iconos y asegurate que su nombre coincidan con los `.json` de [__@data](mad-main/src/data/)
 
 ### 3. Lanza el servidor de desarrollo:
 
