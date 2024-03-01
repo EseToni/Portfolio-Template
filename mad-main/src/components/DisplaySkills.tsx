@@ -19,7 +19,7 @@ const DisplaySkills = () => {
 
 		if (width > 1024) {
 			return 10
-		} else if (width < 1024 && width > 768) {
+		} else if (width < 1024 && width >= 640) {
 			return 6
 		} else {
 			return 4

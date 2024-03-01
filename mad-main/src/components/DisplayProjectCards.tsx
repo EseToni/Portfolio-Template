@@ -18,7 +18,7 @@ const DisplayProjectCards = () => {
 
 		if (width > 1024) {
 			return 3
-		} else if (width > 768) {
+		} else if (width >= 640) {
 			return 2
 		} else {
 			return 1
@@ -36,7 +36,7 @@ const DisplayProjectCards = () => {
 	return (
 		<div class="flex flex-col relative gap-4 lg:gap-8 items-center ">
 			<div
-				class={`flex flex-row gap-8 transition-all ${
+				class={`flex flex-row sm:gap-4 md:gap-6 lg:gap-8 transition-all ${
 					changingPage
 						? currentPage > prevPage
 							? style.translate_x_right
