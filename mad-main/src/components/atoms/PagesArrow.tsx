@@ -4,7 +4,7 @@ interface Props {
 	setCurrentPage: (page: number) => void
 }
 
-import  projects from "@data/projects.json"
+import projects from "@data/projects.json"
 
 const PagesArrow = ({ pages, currentPage, setCurrentPage }: Props) => {
 	const handlePage = (page_s: number) => {
@@ -17,6 +17,7 @@ const PagesArrow = ({ pages, currentPage, setCurrentPage }: Props) => {
 	return (
 		<div class="flex w-full justify-center flex-row gap-10   lg:hidden ">
 			<button
+				aria-label="Submit Form"
 				class="shadow-lg rounded-xl py-1 pl-1 pr-3 disabled:opacity-65 disabled:shadow-sm"
 				disabled={0 == currentPage - 1}
 				onClick={() => handlePage(currentPage - 1)}
@@ -33,6 +34,7 @@ const PagesArrow = ({ pages, currentPage, setCurrentPage }: Props) => {
 				</svg>
 			</button>
 			<button
+				aria-label="Submit Form"
 				class="shadow-lg rounded-xl py-1 pl-3 pr-1 disabled:opacity-65 disabled:shadow-sm"
 				disabled={pages + 1 == currentPage + 1}
 				onClick={() => handlePage(currentPage + 1)}
