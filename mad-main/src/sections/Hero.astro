@@ -4,26 +4,29 @@ import info from "@data/info.json"
 ---
 
 <section
-	class="flex flex-col items-start w-[360px] md:w-[640px] md:justify-center md:gap-4 lg:w-[960px] md:flex-row gap-6"
+	class="flex flex-col items-start w-[340px] md:w-[640px] md:justify-center md:gap-4 lg:w-[960px] md:flex-row gap-6"
 	id="hero"
 >
 	<picture>
 		<img
 			src={info.hero_img || "images/hero_img.webp"}
 			alt="hero"
-			class="w-full h-auto lg:w-[385px] md:w-[420px] md:h-[180px] lg:h-[220px] rounded-xl shadow-lg"
+			class="w-[300px] h-[190px] lg:w-[385px] md:w-[420px] md:h-[180px] lg:h-[220px] rounded-xl shadow-lg"
 		/>
 	</picture>
 	<div class="flex flex-col justify-center gap-6">
 		<div class="flex flex-col gap-2">
-			<h2 class="text-[#0D141C] text-5xl font-black">{info.name}</h2>
+			<h2 class="text-[#0D141C] text-4xl lg:text-5xl font-black">{info.name}</h2>
 			<p class="text-[#0D141C] text-left text-balance">
 				{info.description}
 			</p>
 		</div>
 
 		<div class="flex flex-row gap-4 font-bold">
-			<a href={`${info.resume || "resources/CV.pdf"}`} download={"resume_cv_" + info.alias + ".pdf"}>
+			<a
+				href={`${info.resume || "resources/CV.pdf"}`}
+				download={"resume_cv_" + info.alias + ".pdf"}
+			>
 				<button
 					class="group items-start gap-1 bg-[var(--primary-color)] rounded-xl text-[#F7FAFC] py-2 px-4 flex text-center transition-all hover:bg-[#F7FAFC] hover:text-[var(--primary-color)] hover:shadow-md hover:scale-105"
 				>
