@@ -74,6 +74,8 @@
 ```bash
 # Clona el proyecto
 git clone https://github.com/EseToni/Portfolio-Template.git
+# Instala las dependencias
+npm install
 ```
 
 ### 2. Añade tu contenido:
