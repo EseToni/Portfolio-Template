@@ -9,7 +9,7 @@
 </a>
 <p>
   <em>
-    Sencillo de usar con .json, de <strong>libre uso</strong>
+    Sencillo de usar con .json, de <strong>codigo abierto</strong>
   </em></p>
 </p>
 
