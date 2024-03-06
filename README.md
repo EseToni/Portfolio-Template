@@ -108,7 +108,7 @@ npm run dev
 
 ## 🔑 Licencia
 
-[MIT](LICENSE.txt) - Creado por [**tonidev**](https://github.com/EseToni/)https://github.com/EseToni/).
+[MIT](LICENSE.txt) - Creado por [**tonidev**](https://github.com/EseToni/).
 
 ## 🫂 Contribuidores
 
